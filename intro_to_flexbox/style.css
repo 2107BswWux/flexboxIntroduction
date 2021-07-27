@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* 
+
+css for center positioning
+- need to have position:relative; on the parent element
+- on child element position:absolute;
+
+top:50%;
+left:50%;
+transform:translate:(-50%,-50%);
+*/
+
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    background: #EFFFC8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+ul li{
+    padding: 10px;
+}
+
+/* start of welcome container css */
+
+.welcomeContainer{
+    height: 90vh;
+    width: 100vw;
+    background-image: url("coverImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 50%; */
+    /* height: 50px;
+    background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcomeContainer h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+/* end of welcome container css */
+
+.productContainer{
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.product{
+    height: 50vh;
+    width: 30%;
+    background: red;
+}
+
+footer{
+    height:20vh;
+    width: 100vw;
+    background: tomato;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.socialLinks img{
+    height: 20px;
+}
